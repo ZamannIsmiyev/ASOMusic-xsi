@@ -18,7 +18,7 @@ HELP_1 = """✅**<u>Admin Əmrləri:</u>**
 /shuffle və ya /cshuffle- Növbəyə qoyulmuş pleylistləri təsirə məruz qoyub.
 /seek və ya /cseek - İrəli Musiqini yaxınlarınıza qədər axtarın
 /seekback və ya /cseekback - Geriyə Musiqini yaxınlarınıza qədər axtarın
-/yenidən başladın - Söhbətiniz üçün botu yenidən başladın.
+/restart başladın - Söhbətiniz üçün botu yenidən başladın.
 ✅<u>**Xüsusi keçid:**</u>
 /skip və ya /cskip [Nömrə(misal: 3)]
     - Musiqini seçilmiş növbəli nömrəyə keçir. Nümunə: /skip 3 musiqini üçüncü musiqiyə keçirəcək və növbə olan 1 və 2 musiqiyə məhəl qoymayacaq.
@@ -89,7 +89,7 @@ HELP_4 = """✅<u>**Əlavə Əmrlər:**</u>
 
 4️⃣ **Təmiz rejimi:** Söhbətinizin təmiz və yaxşı qaldığından əmin olmaq üçün aktivləşdirildikdə botun mesajlarını 5 dəqiqədən sonra qrupunuzdan silir.
 
-5️⃣ **Command Clean** : Aktivləşdirildikdə, Bot icra etdiyi əmrləri (/oynat, /pauza, /qarışdır, /dayan və s.) dərhal siləcək.
+5️⃣ **Command Clean** : Aktivləşdirildikdə, Bot icra etdiyi əmrləri (/oynat, /pauza, /qarışdır, /pause və s.) dərhal siləcək.
 
 6️⃣ **Oynatma Parametrləri:**
 
@@ -97,7 +97,7 @@ HELP_4 = """✅<u>**Əlavə Əmrlər:**</u>
 
 <u>Oyun rejimində seçimlər:</u>
 
-1️⃣ **Axtarış Modu** [Birbaşa və ya Daxil] - Siz /oyun rejimini verərkən axtarış rejiminizi dəyişir.
+1️⃣ **Axtarış Modu** [Birbaşa və ya Daxil] - Siz /play rejimini verərkən axtarış rejiminizi dəyişir.
 
 2️⃣ **Admin Əmrləri** [Hər kəs və ya Adminlər] - Qrupunuzda olan hər kəs admin əmrlərindən (/skip, /stop və s.) istifadə edə bilər.
 
@@ -151,10 +151,10 @@ HELP_5 = """🔰**<u>SUDO İSTİFADƏÇİLƏRİNİ ƏLAVƏ EDİN və SİLİN :</
 ⚡️**<u>ŞƏXSİ BOT FUNKSİYASI:</u>**
 /authorize [CHAT_ID] - Botunuzdan istifadə etmək üçün söhbətə icazə verin.
 /unauthorize [CHAT_ID] - Çata botunuzdan istifadə etməyə icazə verməyin.
-/səlahiyyətli - Botunuzun bütün icazə verilən söhbətlərini yoxlayın.
+/authorized - Botunuzun bütün icazə verilən söhbətlərini yoxlayın.
 
 🌐**<u>YAYIM FONKSİYASI:</u>**
-/yayım [Mesaj və ya Mesaja Cavab] - Botun Xidmət edilən Çatlarına istənilən mesajı yayımlayın.
+/broadcast [Mesaj və ya Mesaja Cavab] - Botun Xidmət edilən Çatlarına istənilən mesajı yayımlayın.
 
 <u>yayım seçimləri:</u>
 **-pin** : Bu, mesajınızı sancacaq
@@ -163,6 +163,6 @@ HELP_5 = """🔰**<u>SUDO İSTİFADƏÇİLƏRİNİ ƏLAVƏ EDİN və SİLİN :</
 **-köməkçi** : Bu, mesajınızı botunuzun köməkçi hesabından yayımlayacaq.
 **-nobot** : Bu, botunuzu mesaj yayımlamamağa məcbur edəcək
 
-**Misal:** `/yayım -istifadəçi -köməkçi -pin Salam Testi`
+**Misal:** `/broadcast -istifadəçi -köməkçi -pin Salam Testi`
 
 """
