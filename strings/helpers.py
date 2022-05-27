@@ -1,168 +1,168 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Müəllif hüququ (C) 2021-2022, TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Bu fayl < https://github.com/TeamYukki/YukkiMusicBot > layihəsinin bir hissəsidir,
+# və "GNU v3.0 Lisenziya Müqaviləsi" əsasında buraxılır.
+# Zəhmət olmasa baxın < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
-# All rights reserved.
+# Bütün hüquqlar qorunur.
 
-HELP_1  =  """✅**<u>Admin Əmrləri:</u>**
-**c** kanal oyunu deməkdir.
+HELP_1 = """✅**<u>Admin Əmrləri:</u>**
+**c** kanal oyunu qurmaq.
 /pause və ya /cpause - Oxunan musiqini dayandırın.
 /resume və ya /cresume- Pauza edilmiş musiqini davam etdirin.
 /sessiz və ya /cmute- Oynanan musiqinin səsini söndürün.
 /unmute və ya /cunmute- Səssiz musiqinin səsini açın.
 /skip və ya /cskip- Cari ifa olunan musiqini keçin.
 /stop və ya /cstop- Oynanan musiqini dayandırın.
-/shuffle və ya /cshuffle- Növbəyə qoyulmuş pleylistləri təsadüfi qarışdırır.
-/seek və ya /cseek - İrəli Musiqini müddətinizə qədər axtarın
-/seekback və ya /cseekback - Geriyə Musiqini müddətinizə qədər axtarın
+/shuffle və ya /cshuffle- Növbəyə qoyulmuş pleylistləri təsirə məruz qoyub.
+/seek və ya /cseek - İrəli Musiqini yaxınlarınıza qədər axtarın
+/seekback və ya /cseekback - Geriyə Musiqini yaxınlarınıza qədər axtarın
 /yenidən başladın - Söhbətiniz üçün botu yenidən başladın.
 ✅<u>**Xüsusi keçid:**</u>
 /skip və ya /cskip [Nömrə(misal: 3)]
-    - Musiqini müəyyən edilmiş növbəli nömrəyə keçir. Nümunə: /skip 3 musiqini üçüncü növbəli musiqiyə keçirəcək və növbədə olan 1 və 2 musiqiyə məhəl qoymayacaq.
+    - Musiqini seçilmiş növbəli nömrəyə keçir. Nümunə: /skip 3 musiqini üçüncü musiqiyə keçirəcək və növbə olan 1 və 2 musiqiyə məhəl qoymayacaq.
 ✅<u>**Loop Play:**</u>
 /loop və ya /clop [enable/disable] və ya [1-10 arası rəqəmlər]
-    - Aktivləşdirildikdə, bot səsli söhbətdə cari ifa olunan musiqini 1-10 dəfə çevirir. Varsayılan olaraq 10 dəfə.
+    - Aktivləşdirilir, bot səsli söhbətdə cari ifa olunan musiqini 1-10 dəfə çevirir. Varsayılan olaraq 10 dəfə.
 ✅<u>**Auth İstifadəçiləri:**</u>
-Auth İstifadəçiləri söhbətinizdə admin hüquqları olmadan admin əmrlərindən istifadə edə bilərlər.
-/auth [İstifadəçi adı] - Qrupun AUTH SİYAHISINA istifadəçi əlavə edin.
+Auth İstifadəçiləri söhbətinizdə admin hüquqları olmadan admin əmrindən istifadə edə bilərsiniz.
+/auth [İstifadəçi adı] - Qrupun AUTH SİYAHISINA əlavə edin.
 /unauth [İstifadəçi adı] - Qrupun AUTH LIST-dən istifadəçini çıxarın.
 /authusers - Qrupun AUTH SİYAHISINI yoxlayın."""
 
 
-HELP_2 = """✅<u>**Play Commands:**</u>
+HELP_2 = """✅<u>**Oynatma Əmrləri:**</u>
 
-Available Commands = play , vplay , cplay
+Mövcud Əmrlər = play , vplay , cplay
 
-ForcePlay Commands = playforce , vplayforce , cplayforce
+ForcePlay Əmrləri = playforce , vplayforce , cplayforce
 
-**c** stands for channel play.
-**v** stands for video play.
-**force** stands for force play.
+**c** kanal oyunu deməkdir.
+**v** video oynatma deməkdir.
+**force** güc oyunu deməkdir.
 
-/play or /vplay or /cplay  - Bot will start playing your given query on voice chat or Stream live links on voice chats.
+/play və ya /vplay və ya /cplay - Bot verdiyiniz sorğunu səsli söhbətdə oynamağa başlayacaq və ya səsli söhbətlərdə canlı bağlantıları yayımlayacaq.
 
-/playforce or /vplayforce or /cplayforce -  **Force Play** stops the current playing track on voice chat and starts playing the searched track instantly without disturbing/clearing queue.
+/playforce və ya /vplayforce və ya /cplayforce - **Force Play** səsli çatda cari ifa olunan treki dayandırır və növbəni pozmadan/təmizləmədən axtarılan treki dərhal ifa etməyə başlayır.
 
-/channelplay [Chat username or id] or [Disable] - Connect channel to a group and stream music on channel's voice chat from your group.
-
-
-✅**<u>Bot's Server Playlists:</u>**
-/playlist  - Check Your Saved Playlist On Servers.
-/deleteplaylist - Delete any saved music in your playlist
-/play  - Start playing Your Saved Playlist from Servers."""
+/channelplay [Söhbət istifadəçi adı və ya id] və ya [Disable] - Kanalı qrupa qoşun və qrupunuzdan kanalın səsli söhbətində musiqi yayımlayın.
 
 
-HELP_3 = """✅<u>**Bot Commands:**</u>
+✅**<u>Botun Server Pleylistləri:</u>**
+/playlist - Serverlərdə Saxlanmış Pleylistinizi yoxlayın.
+/deleteplaylist - Pleylistinizdə saxlanan hər hansı musiqini silin
+/play - Serverlərdən Saxlanmış Pleylistinizi oynatmağa başlayın."""
 
-/stats - Get Top 10 Tracks Global Stats, Top 10 Users of bot, Top 10 Chats on bot, Top 10 Played in a chat etc etc.
 
-/sudolist - Check Sudo Users of Yukki Music Bot
+HELP_3 = """✅<u>**Bot Əmrləri:**</u>
 
-/lyrics [Music Name] - Searches Lyrics for the particular Music on web.
+/stats - Qlobal Statistikanın ən yaxşı 10 trekini, botun ən yaxşı 10 istifadəçisini, botda ən yaxşı 10 söhbəti, söhbətdə oynanan ən yaxşı 10-u və s. alın.
 
-/song [Track Name] or [YT Link] - Download any track from youtube in mp3 or mp4 formats.
+/sudolist - Yukki Musiqi Botunun Sudo İstifadəçilərini yoxlayın
 
-/player -  Get a interactive Playing Panel.
+/lyrics [Musiqi Adı] - Vebdə xüsusi Musiqi üçün Lirikləri axtarır.
 
-**c** stands for channel play.
+/mahnı [Track Name] və ya [YT Link] - YouTube-dan mp3 və ya mp4 formatında istənilən treki yükləyin.
 
-/queue or /cqueue- Check Queue List of Music."""
+/player - İnteraktiv Oyun Paneli əldə edin.
 
-HELP_4 = """✅<u>**Extra  Commands:**</u>
-/start - Start the Music Bot.
-/help  - Get Commands Helper Menu with detailed explanations of commands.
-/ping- Ping the Bot and check Ram, Cpu etc stats of Bot.
+**c** kanal oyunu deməkdir.
 
-✅<u>**Group Settings:**</u>
-/settings - Get a complete group's settings with inline buttons
+/queue və ya /cqueue- Musiqinin Növbə Siyahısını yoxlayın."""
 
-🔗 **Options in Settings:**
+HELP_4 = """✅<u>**Əlavə Əmrlər:**</u>
+/start - Musiqi Botunu işə salın.
+/ help - Əmrlərin ətraflı izahı ilə Əmrlər Köməkçisi Menyusunu əldə edin.
+/ping- Botu pingləyin və Botun Ram, CPU və s. statistikasını yoxlayın.
 
-1️⃣ You can set **Audio Quality** you want to stream on voice chat.
+✅<u>**Qrup Parametrləri:**</u>
+/parametrlər - Daxili düymələrlə tam qrupun parametrlərini əldə edin
 
-2️⃣ You can set **Video Quality** you want to stream on voice chat.
+🔗 **Parametrlərdəki seçimlər:**
 
-3️⃣ **Auth Users**:- You can change admin commands mode from here to everyone or admins only. If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
+1️⃣ Siz səsli söhbətdə yayımlamaq istədiyiniz **Audio Keyfiyyətini** təyin edə bilərsiniz.
 
-4️⃣ **Clean Mode:** When enabled deletes the bot's messages after 5 mins from your group to make sure your chat remains clean and good.
+2️⃣ Siz səsli söhbətdə yayımlamaq istədiyiniz **Video Keyfiyyətini** təyin edə bilərsiniz.
 
-5️⃣ **Command Clean** : When activated, Bot will delete its executed commands (/play, /pause, /shuffle, /stop etc) immediately.
+3️⃣ **Auth Users**:- Admin əmrləri rejimini buradan hamıya və ya yalnız adminlərə dəyişə bilərsiniz. Əgər hər kəs, sizin qrupunuzda olan hər kəs admin əmrlərindən istifadə edə biləcək (məsələn, /skip, /stop və s.)
 
-6️⃣ **Play Settings:**
+4️⃣ **Təmiz rejimi:** Söhbətinizin təmiz və yaxşı qaldığından əmin olmaq üçün aktivləşdirildikdə botun mesajlarını 5 dəqiqədən sonra qrupunuzdan silir.
 
-/playmode - Get a complete play settings panel with buttons where you can set your group's play settings. 
+5️⃣ **Command Clean** : Aktivləşdirildikdə, Bot icra etdiyi əmrləri (/oynat, /pauza, /qarışdır, /dayan və s.) dərhal siləcək.
 
-<u>Options in playmode:</u>
+6️⃣ **Oynatma Parametrləri:**
 
-1️⃣ **Search Mode** [Direct or Inline] - Changes your search mode while you give /play mode. 
+/playmode - Qrupunuzun oyun parametrlərini təyin edə biləcəyiniz düymələri olan tam oyun parametrləri paneli əldə edin.
 
-2️⃣ **Admin Commands** [Everyone or Admins] - If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
+<u>Oyun rejimində seçimlər:</u>
 
-3️⃣ **Play Type** [Everyone or Admins] - If admins, only admins present in group can play music on voice chat."""
+1️⃣ **Axtarış Modu** [Birbaşa və ya Daxil] - Siz /oyun rejimini verərkən axtarış rejiminizi dəyişir.
 
-HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
-/addsudo [Username or Reply to a user]
-/delsudo [Username or Reply to a user]
+2️⃣ **Admin Əmrləri** [Hər kəs və ya Adminlər] - Qrupunuzda olan hər kəs admin əmrlərindən (/skip, /stop və s.) istifadə edə bilər.
+
+3️⃣ **Oynatma Növü** [Hər kəs və ya Adminlər] - Adminlərsə, yalnız qrupda olan adminlər səsli çatda musiqi oxuya bilər."""
+
+HELP_5 = """🔰**<u>SUDO İSTİFADƏÇİLƏRİNİ ƏLAVƏ EDİN və SİLİN :</u>**
+/addsudo [İstifadəçi adı və ya istifadəçiyə cavab]
+/delsudo [İstifadəçi adı və ya istifadəçiyə cavab]
 
 🛃**<u>HEROKU:</u>**
-/usage - Dyno Usage.
+/istifadə - Dyno İstifadəsi.
 
-🌐**<u>CONFIG VARS:</u>**
-/get_var - Get a config var from Heroku or .env.
-/del_var - Delete any var on Heroku or .env.
-/set_var [Var Name] [Value] - Set a Var or Update a Var on heroku or .env. Seperate Var and its Value with a space.
+🌐**<u>VARS KONFIQLƏMƏ:</u>**
+/get_var - Heroku və ya .env-dən konfiqurasiya var əldə edin.
+/del_var - Heroku və ya .env-də istənilən varı silin.
+/set_var [Var Adı] [Dəyər] - Heroku və ya .env-də Var təyin edin və ya Varı yeniləyin. Var və onun dəyərini boşluqla ayırın.
 
-🤖**<u>BOT COMMANDS:</u>**
-/reboot - Reboot your Bot. 
-/update - Update Bot.
-/speedtest - Check server speeds
-/maintenance [enable / disable] 
-/logger [enable / disable] - Bot logs the searched queries in logger group.
-/get_log [Number of Lines] - Get log of your bot from heroku or vps. Works for both.
-/autoend [enable|disable] - Enable Auto stream end after 3 mins if no one is listening.
+🤖**<u>BOT ƏMƏRLƏRİ:</u>**
+/reboot - Botunuzu yenidən başladın.
+/ yeniləmə - Botu yeniləyin.
+/speedtest - Server sürətlərini yoxlayın
+/ baxım [aktiv / söndürün]
+/logger [enable / disable] - Bot axtarış edilmiş sorğuları qeydiyyatçı qrupunda qeyd edir.
+/get_log [Xətlərin sayı] - Heroku və ya vps-dən botunuzun qeydini əldə edin. Hər ikisi üçün işləyir.
+/autoend [enable|disable] - Heç kim qulaq asmırsa, 3 dəqiqədən sonra avtomatik axın sonunu aktivləşdirin.
 
-📈**<u>STATS COMMANDS:</u>**
-/activevoice - Check active voice chats on bot.
-/activevideo - Check active video calls on bot.
-/stats - Check Bots Stats
+📈**<u>STATİS ƏMRLARI:</u>**
+/activevoice - Botda aktiv səsli söhbətləri yoxlayın.
+/activevideo - Botda aktiv video zəngləri yoxlayın.
+/stats - Botların Statistikasını yoxlayın
 
-⚠️**<u>BLACKLIST CHAT FUNCTION:</u>**
-/blacklistchat [CHAT_ID] - Blacklist any chat from using Music Bot
-/whitelistchat [CHAT_ID] - Whitelist any blacklisted chat from using Music Bot
-/blacklistedchat - Check all blacklisted chats.
+⚠️**<u>QARA SİYAHİ SAHİB FUNKSİYASI:</u>**
+/blacklistchat [CHAT_ID] - Musiqi Botundan istifadə etməklə bağlı istənilən söhbəti qara siyahıya salın
+/whitelistchat [CHAT_ID] - Musiqi Botundan istifadə etmək üçün qara siyahıya alınmış hər hansı söhbəti ağ siyahıya daxil edin
+/blacklistedchat - Bütün qara siyahıya alınmış söhbətləri yoxlayın.
 
-👤**<u>BLOCKED FUNCTION:</u>**
-/block [Username or Reply to a user] - Prevents a user from using bot commands.
-/unblock [Username or Reply to a user] - Remove a user from Bot's Blocked List.
-/blockedusers - Check blocked Users Lists
+👤**<u>Bloklanmış funksiya:</u>**
+/block [İstifadəçi adı və ya istifadəçiyə cavab] - İstifadəçinin bot əmrlərindən istifadəsinin qarşısını alır.
+/blokdan çıxart [İstifadəçi adı və ya istifadəçiyə cavab] - İstifadəçini Botun Bloklanmış Siyahısından çıxarın.
+/blockedusers - Bloklanmış İstifadəçi Siyahılarını yoxlayın
 
-👤**<u>GBAN FUNCTION:</u>**
-/gban [Username or Reply to a user] - Gban a user from bot's served chat and stop him from using your bot.
-/ungban [Username or Reply to a user] - Remove a user from Bot's gbanned List and allow him for using your bot
-/gbannedusers - Check Gbanned Users Lists
+👤**<u>GBAN FUNKSİYASI:</u>**
+/gban [İstifadəçi adı və ya istifadəçiyə cavab] - İstifadəçini botun xidmət etdiyi çatdan bloklayın və onun botunuzdan istifadəsini dayandırın.
+/ungban [İstifadəçi adı və ya istifadəçiyə cavab] - İstifadəçini Botun qadağan olunmuş Siyahısından çıxarın və ona botunuzdan istifadə etməyə icazə verin
+/gbannedusers - Gbanned İstifadəçi Siyahılarını yoxlayın
 
-🎥**<u>VIDEOCALLS FUNCTION:</u>**
-/set_video_limit [Number of Chats] - Set a maximum Number of Chats allowed for Video Calls at a time. Default to 3 chats.
-/videomode [download|m3u8] - If download mode is enabled, Bot will download videos instead of playing them in M3u8 form. ByDefault to M3u8. You can use download mode when any query doesnt plays in m3u8 mode.
+🎥**<u>VİDEOKALLAR FONKSİYASI:</u>**
+/set_video_limit [Söhbətlərin Sayı] - Eyni anda Video Zənglər üçün icazə verilən Söhbətlərin maksimum sayını təyin edin. Defolt olaraq 3 söhbət.
+/videomode [download|m3u8] - Yükləmə rejimi aktivdirsə, Bot videoları M3u8 formasında oynamaq əvəzinə endirəcək. Varsayılan olaraq M3u8-ə. Hər hansı sorğu m3u8 rejimində oxunmayanda yükləmə rejimindən istifadə edə bilərsiniz.
 
-⚡️**<u>PRIVATE BOT FUNCTION:</u>**
-/authorize [CHAT_ID] - Allow a chat for using your bot.
-/unauthorize [CHAT_ID] - Disallow a chat from using your bot.
-/authorized - Check all allowed chats of your bot.
+⚡️**<u>ŞƏXSİ BOT FUNKSİYASI:</u>**
+/authorize [CHAT_ID] - Botunuzdan istifadə etmək üçün söhbətə icazə verin.
+/unauthorize [CHAT_ID] - Çata botunuzdan istifadə etməyə icazə verməyin.
+/səlahiyyətli - Botunuzun bütün icazə verilən söhbətlərini yoxlayın.
 
-🌐**<u>BROADCAST FUNCTION:</u>**
-/broadcast [Message or Reply to a Message] - Broadcast any message to Bot's Served Chats.
+🌐**<u>YAYIM FONKSİYASI:</u>**
+/yayım [Mesaj və ya Mesaja Cavab] - Botun Xidmət edilən Çatlarına istənilən mesajı yayımlayın.
 
-<u>options for broadcast:</u>
-**-pin** : This will pin your message 
-**-pinloud** : This will pin your message with loud notification
-**-user** : This will broadcast your message to the users who have started your bot.
-**-assistant** : This will broadcast your message from assistant account of your bot.
-**-nobot** : This will force your bot to not broadcast message
+<u>yayım seçimləri:</u>
+**-pin** : Bu, mesajınızı sancacaq
+**-pinloud**: Bu, mesajınızı yüksək səslə bildirişlə bağlayacaq
+**-user** : Bu, mesajınızı botunuzu işə salmış istifadəçilərə yayımlayacaq.
+**-köməkçi** : Bu, mesajınızı botunuzun köməkçi hesabından yayımlayacaq.
+**-nobot** : Bu, botunuzu mesaj yayımlamamağa məcbur edəcək
 
-**Example:** `/broadcast -user -assistant -pin Hello Testing`
+**Misal:** `/yayım -istifadəçi -köməkçi -pin Salam Testi`
 
 """
