@@ -7,36 +7,29 @@
 #
 # All rights reserved.
 
-HELP_1 = """✅**<u>Admin Commands:</u>**
-
-**c** stands for channel play.
-
-/pause or /cpause - Pause the playing music.
-/resume or /cresume- Resume the paused music.
-/mute or /cmute- Mute the playing music.
-/unmute or /cunmute- Unmute the muted music.
-/skip or /cskip- Skip the current playing music.
-/stop or /cstop- Stop the playing music.
-/shuffle or /cshuffle- Randomly shuffles the queued playlist.
-/seek or /cseek - Forward Seek the music to your duration
-/seekback or /cseekback - Backward Seek the music to your duration
-/restart - Restart bot for your chat .
-
-
-✅<u>**Specific Skip:**</u>
-/skip or /cskip [Number(example: 3)] 
-    - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
-
+HELP_1  =  """✅**<u>Admin Əmrləri:</u>**
+**c** kanal oyunu deməkdir.
+/pause və ya /cpause - Oxunan musiqini dayandırın.
+/resume və ya /cresume- Pauza edilmiş musiqini davam etdirin.
+/sessiz və ya /cmute- Oynanan musiqinin səsini söndürün.
+/unmute və ya /cunmute- Səssiz musiqinin səsini açın.
+/skip və ya /cskip- Cari ifa olunan musiqini keçin.
+/stop və ya /cstop- Oynanan musiqini dayandırın.
+/shuffle və ya /cshuffle- Növbəyə qoyulmuş pleylistləri təsadüfi qarışdırır.
+/seek və ya /cseek - İrəli Musiqini müddətinizə qədər axtarın
+/seekback və ya /cseekback - Geriyə Musiqini müddətinizə qədər axtarın
+/yenidən başladın - Söhbətiniz üçün botu yenidən başladın.
+✅<u>**Xüsusi keçid:**</u>
+/skip və ya /cskip [Nömrə(misal: 3)]
+    - Musiqini müəyyən edilmiş növbəli nömrəyə keçir. Nümunə: /skip 3 musiqini üçüncü növbəli musiqiyə keçirəcək və növbədə olan 1 və 2 musiqiyə məhəl qoymayacaq.
 ✅<u>**Loop Play:**</u>
-/loop or /cloop [enable/disable] or [Numbers between 1-10] 
-    - When activated, bot loops the current playing music to 1-10 times on voice chat. Default to 10 times.
-
-✅<u>**Auth Users:**</u>
-Auth Users can use admin commands without admin rights in your chat.
-
-/auth [Username] - Add a user to AUTH LIST of the group.
-/unauth [Username] - Remove a user from AUTH LIST of the group.
-/authusers - Check AUTH LIST of the group."""
+/loop və ya /clop [enable/disable] və ya [1-10 arası rəqəmlər]
+    - Aktivləşdirildikdə, bot səsli söhbətdə cari ifa olunan musiqini 1-10 dəfə çevirir. Varsayılan olaraq 10 dəfə.
+✅<u>**Auth İstifadəçiləri:**</u>
+Auth İstifadəçiləri söhbətinizdə admin hüquqları olmadan admin əmrlərindən istifadə edə bilərlər.
+/auth [İstifadəçi adı] - Qrupun AUTH SİYAHISINA istifadəçi əlavə edin.
+/unauth [İstifadəçi adı] - Qrupun AUTH LIST-dən istifadəçini çıxarın.
+/authusers - Qrupun AUTH SİYAHISINI yoxlayın."""
 
 
 HELP_2 = """✅<u>**Play Commands:**</u>
