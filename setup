@@ -129,7 +129,7 @@ BOT_TOKEN = $bot_token
 MONGO_DB_URI = $mongo_db
 LOG_GROUP_ID = $logger
 MUSIC_BOT_NAME = $mbt
-STRING_SESSION = $string_session
+STRING_SESSION = $AgCk5SbBw7SxRunWN6T0eGWnUY4KtvG9wzqt33EXPxLFPJaEyYqHjR-RM8sIUOMb9g-qIcj3Ay-04Sz923l30IS9GxsBAI7syeRHgA3gu947Gm12QkWACyc9EBt5fpkCzGsr5m16lYsnXz7jPeM3uwcM-ANQ4JJilJpCDCH4KPuUmDnFFYav2anILr4-pkdxomW7Im20PKor_YFkXLtvnQaFe1s9EE7l4ec_TdOuIcuY2lsUfqeVjk6NP2_BRFpVXSBPE6xws-etDuL8Yd24-xoD9hlolO5Rogf3YOylw9wV0MWm4IlGBUJpOOh7RpET9K0W-JGTPzWWKScHFoundZpQeFIm9gA
 OWNER_ID = $ownid""" > .env
 clear
 pprint "\n\n\nYour Vars have been saved Successfully!, Thanks for using Yukki Installer, now you can proceed by starting the bot with bash start!"
